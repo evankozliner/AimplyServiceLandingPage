@@ -8,7 +8,7 @@ h1 {
     font-size: 1.5em;
 }
 h2 {
-    font-size: 48px;
+    font-size: 4.5em;
 }
 h3 {
     font-weight: 100;
@@ -79,6 +79,33 @@ main {
     max-width: 960px;
     margin: auto;
 }
+.tf-btn-group {
+    display: flex;
+    width: fit-content;
+    border-radius: 5px;
+    padding: .2em .8em .35em .8em;
+    background-color: rgb(93, 93, 255);
+    filter: drop-shadow(6px 6px 0 black)
+}
+
+.tf-btn-group {
+    display: flex;
+    align-items: center;
+}
+
+/* If you want some spacing between the button and the image, you can add a margin to either the button or the image. For instance: */
+
+.typeform-button {
+    margin-right: 10px;  /* This will add a 10px space to the right of the button */
+}
+
+.tf-btn-group:hover {background-color: rgb(24, 24, 189);}
+.typeform-button {
+}
+.tf-btn-group img {
+    width: 12px;
+    margin: 0 0 .15em .1em;
+}
 .typeform-button button {
     display: inline-block !important;
     position: relative !important;
@@ -132,7 +159,7 @@ figure.testimonial {
     font-size: 15px;
 }
 .summary {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .summary .book-call {
     display: block;
@@ -205,6 +232,9 @@ figure.testimonial {
 .reminder button {
     margin: auto;
     display: block;
+}
+.reminder .tf-btn-group, .summary .tf-btn-group {
+    margin: auto;
 }
 .letter {
     max-width: 800px;
