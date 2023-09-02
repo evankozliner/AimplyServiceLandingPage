@@ -17,7 +17,7 @@ h3 {
     line-height: 1.5;
 }
 h4 {
-    font-size: 44px;
+    font-size: 2em;
 }
 header {
     display: flex;
@@ -88,9 +88,13 @@ main {
     filter: drop-shadow(6px 6px 0 black)
 }
 
+header .tf-btn-group {
+    margin-left: 20px;
+}
 .tf-btn-group {
     display: flex;
     align-items: center;
+    font-size: 1em;
 }
 
 /* If you want some spacing between the button and the image, you can add a margin to either the button or the image. For instance: */
@@ -189,7 +193,7 @@ figure.testimonial {
 }
 
 .service-block .emoji{
-    font-size: 150px;
+    font-size: 7em;
 }
 
 .faq div{
@@ -249,8 +253,8 @@ figure.testimonial {
     margin-top: 15px;
 }
 .founder-letter {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .founder-letter p {
@@ -262,3 +266,12 @@ footer p{
     text-align: center;
 }
 
+@media (max-width: 576px) {
+    /* Mobile devices */
+    header .tf-btn-group {
+        font-size: 0.25em;
+    }
+    h2 {
+        font-size: 3.5em;
+    }
+}
