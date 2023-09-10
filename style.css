@@ -102,6 +102,12 @@ main {
     margin: 0px 0px 1em 0px;
 }
 
+.pricing-table {
+    overflow-x: auto;
+    table-layout: fixed;
+    font-size: .5em;
+}
+
 .right-group {
     display: flex;
     align-items: center;
