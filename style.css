@@ -102,11 +102,6 @@ main {
     margin: 0px 0px 1em 0px;
 }
 
-.pricing-table {
-    overflow-x: auto;
-    table-layout: fixed;
-    font-size: .5em;
-}
 
 .right-group {
     display: flex;
@@ -336,7 +331,6 @@ nav .tf-btn-group {
     nav {
         display: none;
     }
-
 }
 @media (max-width: 576px) {
     /* Mobile devices */
@@ -350,6 +344,13 @@ nav .tf-btn-group {
     .right-group {
         display: none !important;
     }
+
+    .pricing-table {
+        overflow-x: auto;
+        table-layout: fixed;
+        font-size: .5em;
+    }
+
 }
 
 
