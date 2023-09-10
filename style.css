@@ -87,7 +87,32 @@ main {
     background-color: rgb(93, 93, 255);
     filter: drop-shadow(6px 6px 0 black)
 }
+#hamburger {
+    display: block;
+    height: 2em;
+    background: none;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: right;
+}
 
+.pricing-notes {
+    margin: 0px 0px 1em 0px;
+}
+
+.right-group {
+    display: flex;
+    align-items: center;
+}
+.header-item {
+    text-decoration: none;
+    color: black;
+}
+.header-item:first-of-type {
+    margin-right: 20px;
+}
 header .tf-btn-group {
     margin-left: 20px;
 }
@@ -135,6 +160,12 @@ header .tf-btn-group {
 .typeform-button button:hover:after {
     transform: scaleX(1) !important;
     transform-origin: bottom left !important;
+}
+.pricing-notes {
+    text-align: center;
+    background-color: rgb(197, 197, 255);
+    border-radius: 5px;
+    border: 1px solid black;
 }
 .testimonial {
     text-align: center;
@@ -261,17 +292,58 @@ figure.testimonial {
     font-size: 24px;
     font-weight: 100;
 }
+nav {
+    display: flex;
+    transition: height .3s ease;
+    position: sticky;
+    z-index: 2;
+    flex-direction: column;
+    top: 4em;
+    width: 100%;
+    height: 0%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid;
+    background-color: white;
+}
+nav .mlinks {visibility: hidden;}
+nav button {
+    font-size: 1em;
+    background: none;
+    border: none;
+}
+nav a, nav button {
+    width: fit-content;
+    margin: 1em 0 0 0;
+    padding: .2em;
+}
 
 footer p{
     text-align: center;
 }
+nav .tf-btn-group {
+    margin: 1em 0 0 0;
+}
+@media (min-width: 750px) {
+    #hamburger {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
 
+}
 @media (max-width: 576px) {
     /* Mobile devices */
     header .tf-btn-group {
         font-size: 0.25em;
     }
     h2 {
+        margin-top: 0.5em;
         font-size: 3.5em;
     }
+    .right-group {
+        display: none !important;
+    }
 }
+
+
