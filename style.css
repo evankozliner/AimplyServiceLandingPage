@@ -102,6 +102,11 @@ main {
     margin: 0px 0px 1em 0px;
 }
 
+.pricing-table a {
+    text-decoration: underline;
+    color:white;
+}
+
 
 .right-group {
     display: flex;
@@ -161,6 +166,53 @@ header .tf-btn-group {
 .typeform-button button:hover:after {
     transform: scaleX(1) !important;
     transform-origin: bottom left !important;
+}
+/* Style for the table */
+table {
+    border-collapse: separate; /* This change allows for rounded corners */
+    border-spacing: 0; /* This ensures no spacing between the cells */
+    border: 1px solid black; /* Outer border of the table */
+    border-radius: 5px; /* Rounded corners for the table */
+    width: 100%;  /* You can adjust this according to your needs */
+    overflow: hidden; /* This ensures that inner cells don't "spill out" of the rounded table border */
+}
+
+/* Style for the table rows and cells */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Style for the table cells */
+td, th {
+    padding: 8px 12px;  /* Adjust this for cell padding */
+}
+
+/* Style for the hyperlinks inside the table */
+td a {
+    color: blue;  /* Color for links. Adjust if needed */
+    text-decoration: none;  /* Removes the underline from the links */
+}
+
+td a:hover {
+    text-decoration: underline;  /* Adds underline on hover for better UX */
+    color: black;
+}
+
+/* Add a light blue background to every other row */
+tr:nth-child(even) {
+    background-color: rgb(93, 93, 255);
+    color: white;
+}
+
+
+.pricing-table tr:hover a {
+    color: black;
+}
+
+/* Add a gray background to rows on hover */
+tr:hover {
+    background-color: #f5f5f5;  /* This is a light gray color. Adjust as needed. */
+    color: black !important;
 }
 .pricing-notes {
     text-align: center;
