@@ -321,6 +321,24 @@ figure.testimonial {
     margin: auto;
     display: block;
 }
+.reminder {
+    text-align: center;
+}
+footer {
+    margin-top: 2%;
+}
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.75em;
+}
+
+.footer ul li {
+    margin: 0;
+}
+
 .reminder .tf-btn-group, .summary .tf-btn-group {
     margin: auto;
 }
